@@ -21,7 +21,7 @@ class Serializer
         $this->connection = $connection;
     }
 
-    public function serialize(object $notifiable): string
+    public function serialize($notifiable): string
     {
         $result = serialize($this->getSerializedPropertyValue(clone $notifiable));
 

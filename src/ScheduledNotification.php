@@ -86,7 +86,7 @@ class ScheduledNotification
         return self::collection($modelClass::whereNotificationType($notificationClass)->whereNull('sent_at')->get());
     }
 
-    public static function findByTarget(object $notifiable): ?Collection
+    public static function findByTarget($notifiable): ?Collection
     {
         if (! $notifiable instanceof Model) {
             return null;
@@ -129,7 +129,7 @@ class ScheduledNotification
         return self::collection($query->get());
     }
 
-    public static function cancelByTarget(object $notifiable): int
+    public static function cancelByTarget($notifiable): int
     {
         if (! $notifiable instanceof Model) {
             throw new LaravelSnoozeException(
