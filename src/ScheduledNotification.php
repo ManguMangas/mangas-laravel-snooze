@@ -27,7 +27,6 @@ class ScheduledNotification
     }
 
     /**
-     * @param  object  $notifiable
      * @param  Notification  $notification
      * @param  DateTimeInterface  $sendAt
      * @param  array  $meta
@@ -36,7 +35,7 @@ class ScheduledNotification
      * @throws SchedulingFailedException
      */
     public static function create(
-        object $notifiable,
+        $notifiable,
         Notification $notification,
         DateTimeInterface $sendAt,
         array $meta = []
