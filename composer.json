@@ -1,5 +1,5 @@
 {
-    "name": "ManguMangas/mangas-laravel-snooze",
+    "name": "mangumangas/mangas-laravel-snooze",
     "description": "Schedule future notifications and reminders in Laravel",
     "license": "MIT",
     "keywords": [
